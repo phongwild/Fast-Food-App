@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FastFood" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.FastFood" parent="Base.Theme.FastFood" />
+
+    <style name="themeuser" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Btn_Theme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Các thuộc tính theme khác -->
+        <item name="colorButtonNormal">#EC2578</item>
+    </style>
+</resources>

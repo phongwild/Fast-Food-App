@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Fragment_User.Fragment_User_Main"
+    android:backgroundTint="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SearchView
+                    android:layout_width="325dp"
+                    android:layout_height="55dp"
+                    android:hint="Search for food"
+                    android:background="@drawable/search_style"
+                    android:id="@+id/sv_frm_main_user"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_notfication_pink"
+                    android:layout_gravity="end|center_vertical" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <ViewFlipper
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:flipInterval="2000"
+                    android:inAnimation="@anim/fade_in_center"
+                    android:outAnimation="@anim/fade_out_center">
+
+                    <ImageView
+                        android:id="@+id/img_slide_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:srcCompat="@drawable/img_slider_1" />
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/img_slide_2"
+                        app:srcCompat="@drawable/img_slider_2"/>
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/img_slide_3"
+                        app:srcCompat="@drawable/img_slider_3"/>
+                </ViewFlipper>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rcv1_frm_main_user"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:id="@+id/rcv2_frm_main_user"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="bold"
+                android:text="Popular Menu"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcv3_frm_main_user"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="73dp"/>
+        </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="155dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:theme="@style/themeuser"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/item_img_rcv2"
+            android:layout_width="87dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_cart"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/item_name_rcv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chese burger"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@id/item_img_rcv2"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name_rcv2">
+            <TextView
+                android:id="@+id/item_price_rcv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#EC2578"
+                android:text="20k"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addtocart"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/add_cart"
+                app:tint="#EC2578"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/item_des_rcv2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/item_type_rcv2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/item_id_rcv2"/>
+</androidx.cardview.widget.CardView>

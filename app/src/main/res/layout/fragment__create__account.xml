@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/themeuser"
+    tools:context=".Fragment.Fragment_Login_Account.Fragment_Create_Account">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/inCreate_UserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edCreate_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        app:endIconMode="password_toggle"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/inCreate_PassWord">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edCreate_PassWord"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        android:layout_marginHorizontal="10dp"
+        app:endIconMode="password_toggle"
+        android:id="@+id/inCreate_RePassWord">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edCreate_RePassWord"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:hint="RePassword"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#EC2578"
+        android:id="@+id/btn_SignIn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/footer"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you already have an account ?"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/Create_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Login"
+            android:textColor="#EC2578"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

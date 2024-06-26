@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FastFood</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="facebook_app_id">1055839482126699</string>
+    <string name="fb_login_protocol_scheme">fb1055839482126699</string>
+    <string name="facebook_client_token">05cd235cb81c5c783293524897a9a3f9</string>
+
+
+</resources>

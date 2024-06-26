@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List_Activity.Activity_Login.Confirm">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/confirm"
+        android:layout_gravity="center"
+        android:id="@+id/image_confirm"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congrats!"
+        android:textSize="30dp"
+        android:textColor="#EC2578"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile Is Ready To Use"
+        android:textSize="21dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:backgroundTint="#EC2578"
+        android:text="Try Oder"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/Try_Oder_Confirm"
+        android:layout_marginTop="150dp"/>
+
+</LinearLayout>

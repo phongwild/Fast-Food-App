@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:background="@color/white"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_id_product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_product_type"
+            android:src="@drawable/img_cart"/>
+        <TextView
+            android:id="@+id/tv_name_product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chese burger"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img_product_type"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

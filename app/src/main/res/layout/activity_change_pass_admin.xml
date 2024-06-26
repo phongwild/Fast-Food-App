@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/themeuser"
+    tools:context=".List_Activity.Main_Activity.ChangePass_Activity_Admin">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/back_Changepassword_admin"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/changepassword"
+        app:tint="#EC2578"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Old PassWord"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        app:endIconMode="password_toggle"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_oldPassWord_ad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_oldPassWord_ad"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New PassWord"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        app:endIconMode="password_toggle"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_newPassWord_ad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_newPassWord_ad"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RePassWord"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="#EC2578"
+        app:endIconMode="password_toggle"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/in_rePassWord_ad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_rePassWord_ad"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#EDEDED"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="Change Password"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#EC2578"
+        android:id="@+id/btn_changepassword_ad"/>
+
+</LinearLayout>

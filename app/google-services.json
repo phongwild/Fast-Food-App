@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "661540236933",
+    "firebase_url": "https://fast-food-22535-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fast-food-22535",
+    "storage_bucket": "fast-food-22535.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661540236933:android:f0ab6c760ca7482a0b43ec",
+        "android_client_info": {
+          "package_name": "com.example.fastfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661540236933-ftirkv2totlrc7dd8sqo5iucvip87kd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fastfood",
+            "certificate_hash": "01168e364d8b7c2329476daa8ae47733becfcc33"
+          }
+        },
+        {
+          "client_id": "661540236933-afb21gdpih6epv4j2r23rnppfve0h4b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9lu9pJWF5hFIrw3l_J8OAlS6Vujxhzp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661540236933-afb21gdpih6epv4j2r23rnppfve0h4b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

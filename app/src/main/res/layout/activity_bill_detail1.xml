@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List_Activity.Main_Activity.Bill_Detail1_Activity">
+
+    <LinearLayout
+        android:id="@+id/Ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#EC2578"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_back_billdetail"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_name_product_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Bill Detail"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcvBillDetail"/>
+
+</LinearLayout>
